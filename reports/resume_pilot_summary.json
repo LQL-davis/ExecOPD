@@ -1,0 +1,68 @@
+{
+  "status": "RESUME_PILOT_64STEP_COMPLETE",
+  "label": "Resume Pilot / 32-task Validation Subset",
+  "formal_benchmark": false,
+  "final_test_evaluated": false,
+  "final_test_task_content_access_count": 0,
+  "validation_task_ids_sha256": "84adaf2363f127d1cd1c1320eb6ae4399f8ac662a54f6ed1ad3dc32217092513",
+  "training": {
+    "A": {
+      "steps": 64,
+      "fresh_trajectories": 256,
+      "checkpoint_bytes": 91403771993,
+      "initialization": "original 7B Student checkpoint"
+    },
+    "C": {
+      "steps": 64,
+      "fresh_trajectories": 256,
+      "checkpoint_bytes": 91403772002,
+      "initialization": "original 7B Student checkpoint",
+      "teacher_forward_calls": 409,
+      "teacher_scored_code_tokens": 57497,
+      "teacher_input_tokens": 260293,
+      "teacher_forward_wall_seconds": 63.88221369776875
+    }
+  },
+  "validation": {
+    "base": {
+      "pass_count": 17,
+      "execution_success_rate": 0.53125,
+      "average_execution_turns": 1.46875,
+      "failure_to_pass_recovery_count": 1,
+      "failure_to_pass_recovery_eligible_count": 15,
+      "failure_to_pass_recovery_rate": 0.06666666666666667,
+      "terminal_failure_types": {
+        "ACTION_FORMAT_ERROR": 1,
+        "MAX_TURNS": 14
+      },
+      "secure_tool_calls": 100
+    },
+    "A64": {
+      "pass_count": 15,
+      "execution_success_rate": 0.46875,
+      "average_execution_turns": 1.5,
+      "failure_to_pass_recovery_count": 0,
+      "failure_to_pass_recovery_eligible_count": 16,
+      "failure_to_pass_recovery_rate": 0.0,
+      "terminal_failure_types": {
+        "ACTION_FORMAT_ERROR": 1,
+        "MAX_TURNS": 16
+      },
+      "secure_tool_calls": 93
+    },
+    "C64": {
+      "pass_count": 19,
+      "execution_success_rate": 0.59375,
+      "average_execution_turns": 1.375,
+      "failure_to_pass_recovery_count": 0,
+      "failure_to_pass_recovery_eligible_count": 12,
+      "failure_to_pass_recovery_rate": 0.0,
+      "terminal_failure_types": {
+        "ACTION_FORMAT_ERROR": 1,
+        "MAX_TURNS": 12
+      },
+      "secure_tool_calls": 95
+    }
+  },
+  "C_minus_A_success_rate": 0.125
+}

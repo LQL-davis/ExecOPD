@@ -1,0 +1,35 @@
+# Generated Python files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Local datasets, model assets, training state and private execution traces
+data/
+models/
+**/runs/
+**/logs/
+**/checkpoints/
+**/checkpoint_*/
+**/export_step*/
+**/export_after_step*/
+**/raw_samples*.jsonl
+**/trajectories*.jsonl
+**/d1_data_split.json
+**/d1_training_config.json
+*.parquet
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.tar
+*.tar.gz
+*.zip
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

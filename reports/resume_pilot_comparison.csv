@@ -1,0 +1,6 @@
+Metric,Base,A-64,C-64
+Pass count / 32,17,15,19
+Execution success rate,0.5312,0.4688,0.5938
+Average execution turns,1.4688,1.5000,1.3750
+Failure-to-PASS recoveries,1,0,0
+Secure tool calls,100,93,95
